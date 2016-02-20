@@ -2,77 +2,25 @@
 
 ### Installation
 ```bash
-npm install react-native-carousel
+npm install git+https://github.com/XiaoPingJiang/react-native-carousel --save
 ```
 
 ###Properties
 
 ```
-hideIndicators={false} // Set to true to hide the indicators
-indicatorColor="#FFFFFF" // Active indicator color
-indicatorSize={20} // Indicator bullet size
-indicatorSpace={15} // space between each indicator
-inactiveIndicatorColor="#999999" // Inactive indicator color
-indicatorAtBottom={true} // Set to false to show the indicators at the top
-indicatorOffset={250} // Indicator relative position from top or bottom
-onPageChange={callback} // Called when the active page changes
-
-animate={true} // Enable carousel autoplay
-delay={1000} // Set Animation delay between slides
-loop={true} // Allow infinite looped animation. Depends on Prop {...animate} set to true.
- 
+hideIndicators: false,    // 是否隐藏指示器
+indicatorColor: '#000000', // 指示器颜色
+indicatorSize: 50,      // 指示器尺寸
+inactiveIndicatorColor: '#999999', // 未激活时，指示器颜色
+indicatorAtBottom: true,  // 是否设置指示器位于底部
+indicatorOffset: 250, // 指示器与顶部的偏移量
+width: width, //图片宽度
+initialPage: 0, //默认页码
+indicatorSpace: 25, // 指示器间距
+animate: true, //是否显示动画效果
+delay: 1000, //默认时间间隔
+loop: true, //是否循环
 ```
 
-### Usage example
-
-Assuming you have `npm install -g react-native-cli`, first generate an app:
-
-    react-native init RNCarousel
-    cd RNCarousel
-    npm install react-native-carousel --save
-
-Then paste the following into `RNCarousel/index.ios.js`:
-
-```javascript
-'use strict';
-
-var React = require('react-native');
-var {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View,
-} = React;
-
-var Carousel = require('react-native-carousel');
-
-var RNCarousel = React.createClass({
-  render: function() {
-    return (
-      <Carousel width={375}>
-        <View style={styles.container}>
-          <Text>Page 1</Text>
-        </View>
-        <View style={styles.container}>
-          <Text>Page 2</Text>
-        </View>
-        <View style={styles.container}>
-          <Text>Page 3</Text>
-        </View>
-      </Carousel>
-    );
-  }
-});
-
-var styles = StyleSheet.create({
-  container: {
-    width: 375,
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'transparent',
-  },
-});
-
-AppRegistry.registerComponent('RNCarousel', () => RNCarousel);
-```
+### Show Example
+<a href="https://github.com/XiaoPingJiang/react-native-carousel/tree/master/Examples">查看案例</a>
