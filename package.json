@@ -1,6 +1,6 @@
 {
   "name": "react-native-carousel",
-  "version": "0.4.5",
+  "version": "0.4.6",
   "description": "Simple carousel component for react-native",
   "main": "Carousel.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "react-native",
     "carousel"
   ],
-  "author": "Nick Poulden <nick@poulden.com> (https://github.com/nick)",
+  "author": "Nick Poulden <nick@poulden.com> (https://github.com/nick), Fork By Jiangxiaoping",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nick/react-native-carousel/issues"
